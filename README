@@ -1,0 +1,28 @@
+# Proiect Automation
+
+Testare automată end-to-end pentru [SauceDemo](https://www.saucedemo.com/) folosind **Java 17**, **Maven**, **Selenium WebDriver 4**, **JUnit 5** și **WebDriverManager**.  
+(Opțional) Rapoarte **Allure**.
+
+---
+
+## Tehnologii
+- Java 17
+- Maven
+- Selenium WebDriver 4
+- JUnit 5 (Jupiter)
+- WebDriverManager
+- (opțional) Allure
+
+## Structura proiectului
+Proiect Automation/
+├─ src/
+│ ├─ main/
+│ │ └─ java/
+│ │ ├─ Pages/ # Page Objects (LoginPage, InventoryPage, CartPage, Checkout*)
+│ │ └─ utils/ # DriverFactory (ThreadLocal WebDriver)
+│ └─ test/
+│ └─ java/
+│ ├─ base/ # BaseTest (JUnit5 @BeforeEach/@AfterEach)
+│ └─ tests/ # Testele JUnit (T01_..., T02_..., T06_...)
+├─ pom.xml
+└─ README.md
